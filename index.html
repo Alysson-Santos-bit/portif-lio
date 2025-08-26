@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Alysson Santos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <div class="fade-overlay"></div>
+    
+    <a href="tecnologias.html" class="personal-link">
+        <img src="personal.png" alt="Alysson Santos">
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.querySelector('.fade-overlay');
+            if (overlay) {
+                // Adiciona um pequeno atraso de 50 milissegundos para garantir que o CSS seja processado.
+                setTimeout(() => {
+                    overlay.classList.add('hide-overlay');
+                }, 50);
+            }
+        });
+    </script>
+</body>
+</html>
